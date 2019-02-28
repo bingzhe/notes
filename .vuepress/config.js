@@ -3,8 +3,9 @@ module.exports = {
         nav: [
             { text: 'Web', link: '/web/' },
             { text: 'JavaScript', link: '/JavaScript/' },
-            { text: 'CSS', link: '/css/'},
-            { text: 'Liunx', link: '/linux/'}
+            { text: 'CSS', link: '/css/' },
+            { text: 'Liunx', link: '/linux/' },
+            { text: 'Koa', link: '/koa/' }
         ]
     }
 }
