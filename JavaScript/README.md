@@ -1,5 +1,3 @@
-# JavaScript
-
 ### 数组去重
 
 1. ES6 Set 
