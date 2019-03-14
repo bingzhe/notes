@@ -8,9 +8,11 @@
 
 ### meta viewport
 
+https://github.com/joshbuchea/HEAD
+
 ### H5标签有哪些
 
-内容 header main footer article
+内容 header main footer article nav section
 功能 canvas video media(参考mdn)
 
 ### 什么是H5
