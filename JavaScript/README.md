@@ -1,4 +1,133 @@
+### ES6的语法，怎么用
+
+https://fangyinghang.com/es-6-tutorials/
+http://es6.ruanyifeng.com/
+
+### promise
+
+Promise.all()
+
+Promise.race();
+
+手写promise
+https://juejin.im/post/5aafe3edf265da238f125c0a
+
+### 手写防抖函数和节流函数
+
+``` js
+//CD 冷却时间（节流思路 ）
+function fn() { }
+
+var cd = false
+
+button.onclick = function () {
+    if (!cd) {
+        fn()
+        cd = true
+        var timerId = setTimeout(() => {
+            cd = false
+        }, 3000)
+    }
+}
+
+//带着一起做 （防抖函数）
+var timerId = null
+button.onclick = function () {
+    if (timerId) {
+        window.clearTimeout(timerId)
+    }
+    timerId = setTimeout(() => {
+        fn()
+        timerId = null
+    }, 5000)
+}
+```
+### 手写ajax
+
+``` js
+var request = new XMLHttpRequest()
+request.open('GET', '/xxxx')
+request.onreadystatechange = function () {
+    if (request.readyState === 4) {
+        console.log('请求完成')
+        if (request.response.status >= 200 && request.response.status < 300) {
+            console.log('请求成功')
+        } else {
+        }
+    }
+}
+request.send()
+
+var request = new XMLHttpRequest()
+request.open('GET', '/xxxx')
+request.onload = () => { console.log('请求成功') }
+request.send()
+```
+
+### this
+
+1. fn()
+this => window / global
+2. obj.fn()
+this => obj
+3. fn.call(xx)
+this => xx
+4. fn.apply(xx)
+this => xx
+5. fn.bind(xx)
+this => xx
+6. new Fn()
+this => 新的对象
+7. fn = () => { }
+this => 外面的 this
+
+### 闭包，立即执行函数
+### 什么是 JSONP，什么是 CORS，什么是跨域？
+### async/await 怎么用，如何捕获异常？
+### 如何实现深拷贝？
+
+1. 递归
+2. 判断类型
+3. 检查循环引用（环）
+4. 不可能拷贝__proto__
+
+### 如何用正则实现 trim()？
+``` js
+function trim(string) {
+    return string.replace(/^\s+|\s+$/g, '')
+}
+```
+### 不用 class 如何实现继承？用 class 又如何实现？
+``` js
+function Animal() {
+    this.a = 1
+}
+Animal.prototype.move = function () { }
+
+function Dog() {
+    Animal.apply(this, arguments)
+    this.d = 2
+}
+
+let f = function () { }
+f.prototype = Animal.prototye
+Dog.prototype = new f()
+
+Dog.prototype.constructor = Dog
+
+Dog.say = function () { }
+
+class Dog extends Animal {
+    constructor() {
+        super()
+    }
+}
+```
+
+
 ### 数组去重
+
+（ps WeakMap）
 
 1. ES6 Set 
 
@@ -50,6 +179,8 @@ newArr = arr.reduce((preVal, curVal)=>{
     return preVal;
 }, []);
 ```
+
+## 下节
 
 ### this
 
