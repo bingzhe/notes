@@ -1,3 +1,5 @@
+## 一
+
 ### ES6的语法，怎么用
 
 https://fangyinghang.com/es-6-tutorials/
@@ -179,8 +181,7 @@ newArr = arr.reduce((preVal, curVal)=>{
     return preVal;
 }, []);
 ```
-
-## 下节
+## 二
 
 ### this
 

@@ -1,4 +1,4 @@
-## SELinux 开启和关闭
+### SELinux 开启和关闭
 
 SELinux 是一款为了提高系统安全性的软件，但会和很多服务冲突，可以选择关闭
 
@@ -17,7 +17,7 @@ SELinux 是一款为了提高系统安全性的软件，但会和很多服务冲
 
     `# vi /etc/selinux/config` 将SELINUX=enforcing改为SELINUX=disabled，保存重启即可
 
-## 查看yum安装路径
+### 查看yum安装路径
 
 * 查看相关的安装包
 
@@ -53,6 +53,6 @@ rpm -ql mongodb-org-server-4.0.3-1.el6.x86_64
 /var/run/mongodb
 ```
 
-## centOS6.8通过yuman安装MongoDB
+### centOS6.8通过yuman安装MongoDB
 
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
