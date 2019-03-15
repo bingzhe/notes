@@ -181,6 +181,11 @@ newArr = arr.reduce((preVal, curVal)=>{
     return preVal;
 }, []);
 ```
+
+### 事件委托
+https://github.com/FrankFang/wheels/blob/master/lib/dom/index.js
+### mouse写一个拖曳的div
+
 ## 二
 
 ### this
