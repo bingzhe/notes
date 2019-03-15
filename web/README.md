@@ -30,7 +30,7 @@ web标准不是某一个标准，而是一系列标准的集合。为解决网�
 4. 符合web标准， 结构，表型，行为分离
 
 
-### 浏览器的缓存策略
+### 浏览器的缓存策略（重点）
     
 浏览器缓存，也是客户端缓存，是网页性能优化很重要的一个点。
 
@@ -110,4 +110,16 @@ HTTPS安全超文本传输协议，它是一个安全通信通道，基于HTTP�
 1. 区分用户是计算机还是人的公共全自动程序，防止恶意破解密码，刷票，论坛灌水等
 2. 例如黑客用程序不断暴力破解
 
+### HTTP 状态码（重点）
+### GET 和 POST 的区别（重点）  （语义的区别）
+### Cookie V.S. LocalStorage V.S. SessionStorage V.S. Session
 
+cookie 服务器-浏览器一段字符串
+session 服务器  cookie浏览器
+session 基于cookie
+session id放到cookie里面
+SessionStorage(session过期)
+
+### http1.0和http2.0的区别
+
+（ps屈光宇）
