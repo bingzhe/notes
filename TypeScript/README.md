@@ -12,3 +12,6 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
 }
 
 ```
+
+## never类型是什么
+## TypeScirp 和 JavaScript有什么优点
