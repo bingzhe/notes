@@ -11,6 +11,7 @@ module.exports = {
             { text: 'React', link: '/react/' },
             { text: 'TypeScript', link: '/typescript/' },
             { text: 'Webpack', link: '/webpack/' },
+            { text: 'Other', link: '/other/' },
         ],
         sidebar: [
             ['/web/', 'Web'],
@@ -22,7 +23,8 @@ module.exports = {
             ['/vue/', 'Vue'],
             ['/react/', 'React'],
             ['/typescript/', 'TypeScript'],
-            ['/webpack/', 'Webpack']
+            ['/webpack/', 'Webpack'],
+            ['/other/', 'Other']
         ],
         sidebarDepth: 2
     }
