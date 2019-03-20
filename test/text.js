@@ -1,23 +1,10 @@
-function Animal() {
-    this.a = 1
-}
-Animal.prototype.move = function () { }
-
-function Dog() {
-    Animal.apply(this, arguments)
-    this.d = 2
-}
-
-let f = function () { }
-f.prototype = Animal.prototye
-Dog.prototype = new f()
-
-Dog.prototype.constructor = Dog
-
-Dog.say = function () { }
-
-class Dog extends Animal {
-    constructor() {
-        super()
+var twoSum = function (nums, target) {
+    const obj = {}
+    for (let i = 0; i < nums.length; i++) {
+        if (obj[target - nums[i]] != undefined) {
+            return [obj[target - nums[i]], i]
+        } else {
+            obj[nums[i]] = i
+        }
     }
-}
+};
